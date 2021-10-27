@@ -1,0 +1,38 @@
+.container
+{
+    width: 100%;
+    height: 5vh;
+
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
+}
+
+.container ul li
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.container ul li a
+{
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    
+
+    font-size: 36px;
+}
