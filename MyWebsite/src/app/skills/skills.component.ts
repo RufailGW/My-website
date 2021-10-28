@@ -33,5 +33,7 @@ export class SkillsComponent implements OnInit {
     (document.querySelector('#pico') as HTMLElement).style.width= this.pico;
   }
 
+  
+
 
 }
