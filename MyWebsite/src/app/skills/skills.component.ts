@@ -1,5 +1,6 @@
 import { style } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 
 @Component({
   selector: 'app-skills',
@@ -7,8 +8,6 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-
-  constructor() { }
   html = '100%';
   css = '95%';
   py = '95%';
@@ -17,20 +16,46 @@ export class SkillsComponent implements OnInit {
   ang = '95%';
   linux = '100%';
   ml = '60%';
-  pico = '10%';
+  pico = '30%';
 
 
-  ngOnInit(): void {
+  constructor() { 
 
-    (document.querySelector('#html') as HTMLElement).style.width= this.html;
-    (document.querySelector('#css') as HTMLElement).style.width= this.css;
-    (document.querySelector('#py') as HTMLElement).style.width= this.py;
-    (document.querySelector('#js') as HTMLElement).style.width= this.js;
-    (document.querySelector('#njs') as HTMLElement).style.width= this.njs;
-    (document.querySelector('#ang') as HTMLElement).style.width= this.ang;
-    (document.querySelector('#linux') as HTMLElement).style.width= this.linux;
-    (document.querySelector('#ml') as HTMLElement).style.width= this.ml;
-    (document.querySelector('#pico') as HTMLElement).style.width= this.pico;
+    
+
+  }
+ 
+  
+
+
+
+  async ngOnInit(): Promise<void> {
+
+    function delay(ms: number) {
+      return new Promise( resolve => setTimeout(resolve, ms) );
+  }
+
+    (document.querySelector("#html") as HTMLElement).animate([{ width: this.html}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#css") as HTMLElement).animate([{ width: this.css}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#py") as HTMLElement).animate([{ width: this.py}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#js") as HTMLElement).animate([{ width: this.js}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#njs") as HTMLElement).animate([{ width: this.njs}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#ang") as HTMLElement).animate([{ width: this.ang}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#linux") as HTMLElement).animate([{ width: this.linux}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#ml") as HTMLElement).animate([{ width: this.ml}], {duration: 2000, fill: 'forwards' });
+    await delay(500);
+    (document.querySelector("#pico") as HTMLElement).animate([{ width: this.pico}], {duration: 2000, fill: 'forwards' });
+
+
+
+    
   }
 
   

@@ -1,7 +1,19 @@
 <div class="container">
     <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Contacts</a></li>
+        <li><a (click)="scroll(am)">Home</a></li>
+        <li><a (click)="scroll(sk)">Skills</a></li>
+        <li><a (click)="scroll(cnt)">Contacts</a></li>
     </ul>
+</div>
+
+<div class="sections"  #am>
+    <app-aboutme></app-aboutme>
+</div>
+
+<div class="sections" #sk>
+    <app-skills></app-skills>
+</div>
+
+<div class="sections" #cnt>
+    <app-contacts></app-contacts>
 </div>
