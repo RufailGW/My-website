@@ -37,21 +37,21 @@ export class SkillsComponent implements OnInit {
 
     (document.querySelector("#html") as HTMLElement).animate([{ width: this.html}], {duration: 2000, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#css") as HTMLElement).animate([{ width: this.css}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#css") as HTMLElement).animate([{ width: this.css}], {duration: 1800, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#py") as HTMLElement).animate([{ width: this.py}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#py") as HTMLElement).animate([{ width: this.py}], {duration: 1600, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#js") as HTMLElement).animate([{ width: this.js}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#js") as HTMLElement).animate([{ width: this.js}], {duration: 1400, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#njs") as HTMLElement).animate([{ width: this.njs}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#njs") as HTMLElement).animate([{ width: this.njs}], {duration: 1200, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#ang") as HTMLElement).animate([{ width: this.ang}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#ang") as HTMLElement).animate([{ width: this.ang}], {duration: 1000, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#linux") as HTMLElement).animate([{ width: this.linux}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#linux") as HTMLElement).animate([{ width: this.linux}], {duration: 800, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#ml") as HTMLElement).animate([{ width: this.ml}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#ml") as HTMLElement).animate([{ width: this.ml}], {duration: 600, fill: 'forwards' });
     await delay(500);
-    (document.querySelector("#pico") as HTMLElement).animate([{ width: this.pico}], {duration: 2000, fill: 'forwards' });
+    (document.querySelector("#pico") as HTMLElement).animate([{ width: this.pico}], {duration: 400, fill: 'forwards' });
 
 
 

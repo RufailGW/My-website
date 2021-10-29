@@ -45,4 +45,15 @@
     
 
     font-size: 36px;
+
+    cursor: pointer;
+
+    transition: all ease-in 0.3s;
+}
+
+.container ul li a:hover
+{
+    color: black;
+    background-color: white;
+    border-bottom: 5px solid rgb(36, 182, 182);
 }
